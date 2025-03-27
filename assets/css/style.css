@@ -1713,4 +1713,41 @@ button, a { transition: var(--transition); }
     padding: 12px;
     font-size: 16px;
   }
+  footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  footer .footer-text{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+}
+
+footer{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #171c2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+}
+footer .footer-logo{
+  height: 20px;
+  border-radius: 50%;
+}
+
+footer .footer-text{
+  display: flex;
+}
+footer .footer-text a{
+  color: white;
+  text-decoration: none;
 }
