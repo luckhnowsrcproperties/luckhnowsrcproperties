@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+    <div id="contact-form" class="contact-form">
+        <div class="form-data">
+          <div class="form-heading">
+            <h1>Contact Us</h1>
+            <a href="../index.html" id="contact-toggle">Back To Home</a>
+          </div>
+          <form class="data-main">
+            <input id="user-name" class="form-data-el" type="text" placeholder="Enter your name" required>
+            <input id="user-mobile" class="form-data-el" type="number" placeholder="Enter mobile no." required>
+            <textarea id="user-address" class="form-data-el user-address" rows="10" name="address" id="" placeholder="Enter address"
+              required></textarea>
+            <input id="user-email" class="form-data-el" type="email" name="email" id="" placeholder="Enter your email" required>
+            <button class="form-data-el submit-btn " onclick="emailSend(event)" >Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "lnKj5NTq1ntWif0c2",
+        });
+      })();
+    </script>
+    <script src="../assets/js/contact.js"></script>
+</body>
+</html>
